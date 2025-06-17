@@ -21,6 +21,10 @@ app.post('/submit', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('Hello from Node.js API!');
+});
+
 app.listen(3000, () => {
   console.log("Frontend running on port 3000");
 });
