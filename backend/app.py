@@ -10,5 +10,10 @@ def submit():
     print("Received from frontend:", data)
     return jsonify({"status": "success", "data": data}), 200
 
+
+@app.route('/')
+def home():
+    return "Hello from Flask!"
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5050)
