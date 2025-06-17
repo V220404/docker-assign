@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 
 app.post('/submit', async (req, res) => {
   try {
-    const response = await axios.post('http://backend:5050/submit', req.body);
+    const response = await axios.post('http://backend:8000/submit', req.body);
     res.send("Data sent successfully to Flask backend.");
   } catch (err) {
     res.send("Error sending data: " + err.message);
